@@ -60,7 +60,7 @@ describe('arrays', function() {
     var result = arraysAnswers.prepend(a, 10);
 
     expect(result).to.have.length(5);
-    expect(result[0]).to.eql(10);
+    expect(result.join(' ')).to.eql('10 1 2 3 4');
   });
 
   it('you should be able to remove the first item of an array', function () {
