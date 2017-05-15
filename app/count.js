@@ -5,13 +5,9 @@ exports.countAnswers = {
         const Cancel = function () {
             this.cancelled = false;
 
-            this.cancel = () => {
-                this.cancelled = true;
-            };
+            this.cancel = () => this.cancelled = true;
 
-            this.isCancelled = () => {
-                return this.cancelled;
-            };
+            this.isCancelled = () => this.cancelled;
         };
 
         const cancel = new Cancel();
